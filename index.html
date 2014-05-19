@@ -7,20 +7,31 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	
+
 	<div id="product-container">
 
 	</div>
+	<ul id="wishlist">
 
+	</ul>
+	
 	<script id="product-template" type="text/x-handlebars-template">
 		<div class="product">
-		<header>
-			<p>Product title is: </p>{{title}}
-		</header>
-		<img src="{{image}}">
-		<div class="cost">Cost is: {{cost}}</div>
+			<header>
+				<p>Product title is: 
+				<span class='title'>{{title}}</span></p>
+			</header>
+			<img src="{{image}}">
+			<div class="cost">Cost is: {{cost}}
+			</div>
+			<button class="add-to-wishlist">Add an item to your wishlist</button>
 		</div>
 	</script>
+	<script id="wishlist-template" type="text/x-handlebars-template">
+		<li>Game Title: {{title}} <button>Remove</button>
+		</li>
+	</script>
+
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.2/handlebars.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
