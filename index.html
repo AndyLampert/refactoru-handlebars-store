@@ -7,12 +7,19 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+	
 	<div id="product-container">
 
 	</div>
 
-	<script id="" type="text/x-handlebars-template">
-
+	<script id="product-template" type="text/x-handlebars-template">
+		<div class="product">
+		<header>
+			<p>Product title is: </p>{{title}}
+		</header>
+		<img src="{{image}}">
+		<div class="cost">Cost is: {{cost}}</div>
+		</div>
 	</script>
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.2/handlebars.min.js"></script>
